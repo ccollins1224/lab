@@ -47,9 +47,9 @@ class Test:
         self.tv.volume_up()
         assert self.tv.__str__() == 'TV status: Is on = True, Channel = 0, Volume = 1'
 
-        self.tv.channel_up()
-        self.tv.channel_up()
-        self.tv.channel_up()
+        self.tv.volume_up()
+        self.tv.volume_up()
+        self.tv.volume_up()
         assert self.tv.__str__() == 'TV status: Is on = True, Channel = 0, Volume = 2'
 
     def test_volume_down(self):
